@@ -10,7 +10,7 @@ import joblib
 # Fungsi untuk memuat dan mempersiapkan data
 @st.cache
 def load_and_prepare_data():
-    data = pd.read_csv('data_rumah_sakit.csv')
+    data = pd.read_csv('modified.csv')
     
     data['D.O.A'] = pd.to_datetime(data['D.O.A'])
     data['D.O.D'] = pd.to_datetime(data['D.O.D'])
